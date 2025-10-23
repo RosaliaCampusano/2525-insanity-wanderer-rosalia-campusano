@@ -6,6 +6,6 @@ const instrumentSchema = new Schema({
   description: String,
 });
 
-const Instrument = mongoose.model("Instrument", instrumentSchema);
+const Instrument = mongoose.model("Instruments", instrumentSchema);
 
 module.exports = Instrument;

@@ -8,6 +8,6 @@ const songSchema = new Schema({
   instruments: [String],
 });
 
-const Song = mongoose.model("Song", songSchema);
+const Song = mongoose.model("Songs", songSchema);
 
 module.exports = Song;

@@ -1,15 +1,6 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-const characterSchema = new Schema({
-  name: String,
-  ocupation: String,
-  description: String,
-  stamina: Number,
-  favoriteDrink: String,
-  equiment: equiment,
-});
-
 const equiment = new Schema(
   {
     instrument: String,
@@ -21,6 +12,15 @@ const equiment = new Schema(
   { _id: false }
 );
 
-const Character = mongoose.model("Character", characterSchema);
+const characterSchema = new Schema({
+  name: String,
+  ocupation: String,
+  description: String,
+  stamina: Number,
+  favoriteDrink: String,
+  equiment: equiment,
+});
+
+const Character = mongoose.model("Characters", characterSchema);
 
 module.exports = Character;
